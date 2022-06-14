@@ -22,7 +22,7 @@
 ![](img/img6.png)
 
 #### Figura 6
-![](img/img5.png)
+![](img/img7.png)
 
 #### Figura 7
 ![](img/img8.png)

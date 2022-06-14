@@ -18,14 +18,22 @@
                     var ctx = canvas.getContext("2d");
                     if(ctx)
                     {
-                        var gradiente = ctx.createLinearGradient(0,0,canvas.width,0);
-                        gradiente.addColorStop(0, "green");
-                        gradiente.addColorStop(0.35, "white");
-                        gradiente.addColorStop(0.65, "white");
-                        gradiente.addColorStop(1, "red");
-
-                        ctx.fillStyle = gradiente;
-                        ctx.fillRect(0,0,canvas.width,canvas.height);
+                        //descripcion de lineas
+                        ctx.lineWidth = 10;
+                        ctx.strokeStyle = "yellow";
+                        ctx.fillStyle = "red";
+                        //Primer arco
+                        ctx.beginPath();
+                        ctx.arc(100,150,50,1.1*Math.PI, 1.9*Math.PI);
+                        ctx.stroke();
+                        //Segundo arco
+                        ctx.beginPath();
+                        ctx.arc(250,150,50, 1.1*Math.PI, 1.9*Math.PI,true);
+                        ctx.stroke();
+                        //Tercer arco
+                        ctx.beginPath();
+                        ctx.arc(400,150,50, 0, 2*Math.PI,true);
+                        ctx.stroke();
                     }
                     else
                     {
