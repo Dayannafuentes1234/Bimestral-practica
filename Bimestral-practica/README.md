@@ -25,4 +25,4 @@
 ![](img/img5.png)
 
 #### Figura 7
-![](img/img5.png)
+![](img/img8.png)

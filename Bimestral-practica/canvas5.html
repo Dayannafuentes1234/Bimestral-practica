@@ -18,34 +18,28 @@
                     var ctx = canvas.getContext("2d");
                     if(ctx)
                     {
-                        //descripcion de lineas
-                        ctx.lineWidth = 10;
-                        ctx.strokeStyle = "yellow";
-                        ctx.fillStyle = "red";
-                        //path
-                        ctx.beginPath();
-                        ctx.moveTo(50,100);
-                        ctx.lineTo(100,50);
-                        ctx.lineTo(150,100);
-                        ctx.lineTo(100,150);
-                        ctx.stroke();
-                        //path
-                        ctx.beginPath();
-                        ctx.moveTo(200,100);
-                        ctx.lineTo(250,50);
-                        ctx.lineTo(300,100);
-                        ctx.lineTo(250,150);
-                        ctx.closePath();
-                        ctx.stroke();
-                        //path
-                        ctx.beginPath();
-                        ctx.moveTo(350,100);
-                        ctx.lineTo(400,50);
-                        ctx.lineTo(450,100);
-                        ctx.lineTo(400,150);
-                        ctx.fill();
-                        ctx.closePath();
-                        ctx.stroke();
+                      //colores
+                      ctx.lineWidth = 10;
+                      ctx.strokeStyle = "red";
+                      ctx.fillStyke = "yellow";
+
+                      //curva bezier
+                      ctx.beginPath();
+                      //primer punto
+                      ctx.moveTo(50,20);
+                      //dinujamos la curva
+                      ctx.bezierCurveTo(50,100,200,100,200,150);
+                      //dibujamos la curva
+                      ctx.stroke();
+                      
+                      //primer punto
+                      ctx.fillRect(50,20,5,5);
+                      //primer punto tangente
+                      ctx.fillRect(50,100,5,5);
+                      //segundo punto tangente
+                      ctx.fillRect(200,100,5,5);
+                      //segundo punto ancla
+                      ctx.fillRect(200,150,5,5);
                     }
                     else
                     {
