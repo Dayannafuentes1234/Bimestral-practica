@@ -13,7 +13,7 @@
 #### Figura 2
 ![](img/img3.png)
 #### Figura 3
-![](img/Captura%20de%20pantalla%20de%202022-06-14%2009-11-26.png)
+![](img/img4.png)
 
 #### Figura 4
 ![](img/Captura%20de%20pantalla%20de%202022-06-14%2009-18-40.png)
