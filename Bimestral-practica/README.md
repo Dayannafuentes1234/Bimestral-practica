@@ -17,3 +17,12 @@
 
 #### Figura 4
 ![](img/img5.png)
+
+#### Figura 5
+![](img/img6.png)
+
+#### Figura 6
+![](img/img5.png)
+
+#### Figura 7
+![](img/img5.png)
