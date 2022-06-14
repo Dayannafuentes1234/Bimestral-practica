@@ -29,3 +29,6 @@
 
 #### Figura 8
 ![](img/img9.png)
+
+#### Figura 9
+![](img/img10.png)

@@ -18,24 +18,54 @@
                     var ctx = canvas.getContext("2d");
                     if(ctx)
                     {
-                        //descripcion de lineas
-                        ctx.lineWidth = 10;
-                        ctx.strokeStyle = "yellow";
-                        ctx.fillStyle = "red";
-                        //Primer arco
-                        ctx.beginPath();
-                        ctx.arc(100,150,50,1.1*Math.PI, 1.9*Math.PI);
-                        ctx.stroke();
-                        //Segundo arco
-                        ctx.beginPath();
-                        ctx.arc(250,150,50, 1.1*Math.PI, 1.9*Math.PI,true);
-                        ctx.stroke();
-                        //Tercer arco
-                        ctx.beginPath();
-                        ctx.arc(400,150,50, 0, 2*Math.PI,true);
-                        ctx.stroke();
+                        var h = canvas.height;
+                        var w = canvas.width;
+                        var gradiente = ctx.createLinearGradient (0,0,w/2,0);
+                        gradiente.addColorStop (0, "pink");
+                        gradiente.addColorStop (0.15, "yellow");
+                        gradiente.addColorStop (0.35, "white");
+                        gradiente.addColorStop (0.65, "yellow");
+                        
+                        gradiente.addColorStop (1, "red");
+                        ctx.fillStyle = gradiente;
+                        ctx.fillRect (0, 0, w/2, h/2);
+
+                        //Gradiente vertical
+                        gradiente = ctx.createLinearGradient (0,0,0,h/2);
+                        gradiente.addColorStop (0, "pink");
+                        gradiente.addColorStop (0.15, "yellow");
+                        gradiente.addColorStop (0.35, "white");
+                        gradiente.addColorStop (0.65, "yellow");
+                        gradiente.addColorStop (1, "red");
+
+                        ctx.fillStyle = gradiente;
+                        ctx.fillRect (w/2,0,w/2,h/2) ;
+
+                        //Diagonal
+                        gradiente = ctx.createLinearGradient (0, h/2, w/2, h);
+                        gradiente.addColorStop (0, "pink");
+                        gradiente.addColorStop (0.15, "yellow");
+                        gradiente.addColorStop (0.35, "white");
+                        gradiente.addColorStop (0.65, "yellow");
+                        gradiente.addColorStop (1, "red");
+
+                        ctx.fillStyle = gradiente;
+                        ctx.fillRect (0,h/2,w/2,h);
+
+                        
+                        //Diagonal 2
+                        gradiente = ctx.createLinearGradient (w/2, h,w, h/2);
+                        gradiente.addColorStop (0, "pink") ;
+                        gradiente.addColorStop (0.15, "yellow")
+                        gradiente.addColorStop (0.35, "white");
+                        gradiente.addColorStop (0.65, "yellow");
+                        gradiente.addColorStop (1, "red") ;
+
+                        ctx.fillStyle=gradiente;
+                        ctx.fillRect (w/2, h/2,w, h);
                     }
                     else
+    
                     {
                         alert("Error al crear el contexto");
                     }
