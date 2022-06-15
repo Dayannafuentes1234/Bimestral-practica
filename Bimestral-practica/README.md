@@ -63,4 +63,10 @@
 #### Animación 4
 ![](img/punto_final.png)
 
+#### basico 1
+![](img/basico1.png)
+
+#### basico 1.1
+![](img/basico1.1.png)
+
 
